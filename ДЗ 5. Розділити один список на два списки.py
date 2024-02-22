@@ -30,7 +30,7 @@ print(result_list3)
 
 
 input_list = [1, 2, 3, 4, 5, 6]
-if len(input_list) == 0:
+if not input_list:
     print([[], []])
 elif len(input_list) % 2 == 0:
     half_length = len(input_list) // 2
