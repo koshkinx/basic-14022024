@@ -37,7 +37,7 @@ elif len(input_list) % 2 == 0:
     first_half = input_list[:half_length]
     second_half = input_list[half_length:]
     print([first_half, second_half])
-else:  # Непарна кількість елементів
+else:
     half_length = len(input_list) // 2
     first_half = input_list[:half_length + 1]
     second_half = input_list[half_length + 1:]
