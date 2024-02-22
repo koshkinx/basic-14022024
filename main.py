@@ -1,15 +1,20 @@
+num1 = float(input("Please enter the first number: "))
+num2 = float(input("Please enter the second number: "))
 
-number = int(input("enter a 4-digit number: "))
+action = input("Please enter the action (+, -, *, /): ")
 
-print(number // 1000)
-print(number % 1000 // 100)
-print(number % 100 // 10)
-print(number % 10 // 1)
+if action == '+':
+    result = num1 + num2
+elif action == '-':
+    result = num1 - num2
+elif action == '*':
+    result = num1 * num2
+elif action == '/':
+    if num2 == 0:
+        print("You can't divide by 0")
+    else:
+        result = num1 / num2
+else:
+    print("Invalid action. Please enter one of the following: +, -, *, /")
 
-
-
-number = int(input("enter a 5-digit number: "))
-
-reversed_number = (number % 10) * 10000 + ((number // 10) % 10) * 1000 + ((number // 100) % 10) * 100 + ((number // 1000) % 10) * 10 + (number // 10000)
-
-print("result:", reversed_number)
+print("Your result is", result)
