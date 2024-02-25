@@ -1,3 +1,10 @@
-input_list = [12, 3, 4, 10]
-input_list.insert(0, input_list.pop())
-print(input_list)
+lst = [1, 3, 5]
+
+if not lst:
+    result = 0
+else:
+    sum_even = 0
+    for i in len(lst) % 2 == 0
+        sum_even += lst[i]
+    result = sum_even * lst[-1]
+print(result)
