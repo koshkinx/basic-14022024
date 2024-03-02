@@ -1,3 +1,3 @@
-my_lst = ['I', 'like', 'Python','    4 ']
-_string = " ".join(my_lst)
-print(_string)
+input_str = "a-c"
+result = input_str.split('-')
+print(result)  # Вывод: ['a', 'c']
