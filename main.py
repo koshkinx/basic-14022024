@@ -1,7 +1,12 @@
-def calculate_summa(a, b):
-    c = b + a
-    return c
+class Car:
+    def move(self):
+        print('car is moving')
 
-assert calculate_summa(20, 10) == 20, "Первый тест"
-assert calculate_summa(20, 40) == 60, "Второй тест"
-print('OK')
+    def stop(self):
+        print('car stopped')
+
+
+Car().move()
+Car().stop()
+print(Car().__str__)
+Car().__doc__
