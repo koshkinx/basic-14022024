@@ -1,12 +1,6 @@
-def difference(*args):
-    if not args:
-        return 0
-    else:
-        return abs(max(args) - min(args))
+def popular_words(text):
+    text_lower = text.lower()
+    words_list = text_lower.split()
+    print(words_list)
 
-assert difference(1, 2, 3) == 2, 'Test1'
-assert difference(5, -5) == 10, 'Test2'
-assert difference(10.2, -2.2, 0, 1.1, 0.5) == 12.4, 'Test3'
-assert difference() == 0, 'Test4'
-print('OK')
-print(difference(10.2, -2.2, 0, 1.1, 0.5))
+popular_words('we  we  we  we')
